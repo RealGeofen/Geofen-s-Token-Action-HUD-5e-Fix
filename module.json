@@ -1,0 +1,64 @@
+{
+  "id": "geofen-s-token-action-hud-5e-fix",
+  "title": "Geofen’s : Token Action HUD 5e Fix",
+  "description": "Non-destructive stability patch for Token Action HUD Core + Token Action HUD D&D 5e. Coalesces HUD refreshes, detects stale renders after token switches, and refreshes actor actions without modifying player HUD layouts or Token Action HUD settings.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Geofen"
+    }
+  ],
+  "url": "https://github.com/RealGeofen/geofen-s-token-action-hud-5e-fix",
+  "manifest": "https://github.com/RealGeofen/geofen-s-token-action-hud-5e-fix/releases/latest/download/module.json",
+  "download": "https://github.com/RealGeofen/geofen-s-token-action-hud-5e-fix/releases/latest/download/geofen-s-token-action-hud-5e-fix.zip",
+  "compatibility": {
+    "minimum": "14.360",
+    "verified": "14.365",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.1.0",
+          "verified": "5.3.3",
+          "maximum": "5.99"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "token-action-hud-core",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.1.0",
+          "verified": "2.1.1",
+          "maximum": "2.1.99"
+        }
+      },
+      {
+        "id": "token-action-hud-dnd5e",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.1.0",
+          "verified": "2.1.0",
+          "maximum": "2.1.99"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "socket": false,
+  "library": false
+}
